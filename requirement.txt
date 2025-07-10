@@ -1,0 +1,28 @@
+# Deep Learning
+torch
+torchvision
+segmentation-models-pytorch
+
+# Image Processing
+opencv-python
+Pillow
+scikit-image
+
+# Data Science
+numpy
+pandas
+matplotlib
+seaborn
+
+# Web Framework
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Login
+Flask-Bcrypt
+
+# Metrics & Evaluation
+scikit-learn
+
+# Utilities
+tqdm
