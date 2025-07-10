@@ -9,6 +9,6 @@
 
 ### Setup
 ```bash
-conda create -n thyroid-segmentation python=3.12
-conda activate thyroid-segmentation
+conda create -n thyroid-nodule-segmentation python=3.12
+conda activate thyroid-nodule-segmentation
 pip install -r requirements.txt
