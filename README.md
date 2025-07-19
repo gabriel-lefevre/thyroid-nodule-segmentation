@@ -7,17 +7,32 @@
 - Python 3.12
 - Conda
 
-### Setup
+### Step 1: Clone the repository
 ```bash
-# 1. Clone repository
 git clone https://github.com/gabriel-lefevre/thyroid-nodule-segmentation
 cd thyroid-nodule-segmentation
+```
 
-# 2. Create environment
+### Step 2: Create conda environment
+```bash
 conda create -n thyroid-nodule-segmentation python=3.12
-conda activate thyroid-nodule-segmentation
-pip install -r requirements.txt
+```
 
-# 3. Download dataset
-python download_dataset.py
-# OR manually: Download from Releases > dataset-v1.0.zip
+### Step 3: Activate environment
+```bash
+conda activate thyroid-nodule-segmentation
+```
+
+### Step 4: Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Step 5: Download dataset
+```bash
+python get_dataset.py
+```
+### Or manually: Download from Releases > dataset-v1.0.zip
+Go to [Releases](https://github.com/gabriel-lefevre/thyroid-nodule-segmentation/releases) and download `thyroid-nodule-dataset-v1.0.zip`
+
+Extract the dataset to a `data/` folder in your project root.
