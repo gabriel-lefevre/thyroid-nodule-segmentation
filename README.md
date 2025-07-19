@@ -9,6 +9,15 @@
 
 ### Setup
 ```bash
+# 1. Clone repository
+git clone https://github.com/gabriel-lefevre/thyroid-nodule-segmentation
+cd thyroid-nodule-segmentation
+
+# 2. Create environment
 conda create -n thyroid-nodule-segmentation python=3.12
 conda activate thyroid-nodule-segmentation
 pip install -r requirements.txt
+
+# 3. Download dataset
+python download_dataset.py
+# OR manually: Download from Releases > dataset-v1.0.zip
