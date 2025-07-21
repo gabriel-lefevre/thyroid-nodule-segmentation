@@ -9,7 +9,7 @@ def download_dataset():
     dataset_url = "https://github.com/gabriel-lefevre/thyroid-nodule-segmentation/releases/download/dataset-v1.0/thyroid-nodule-dataset-v1.0.zip"
     
     # Create data dir
-    data_dir = Path("data")
+    data_dir = Path("../data")
     data_dir.mkdir(exist_ok=True)
     
     dataset_path = data_dir / "dataset.zip"
