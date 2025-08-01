@@ -6,3 +6,4 @@ albumentations~=2.0.8
 segmentation-models-pytorch~=0.5.0
 torchvision~=0.22.1
 matplotlib~=3.10.3
+torchmetrics~=1.8.0

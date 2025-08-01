@@ -19,3 +19,10 @@ ANNOTATED_IMGS_DIR = os.path.join(DATA_DIR, "annotated_imgs")
 MASKS_DIR = os.path.join(DATA_DIR, "masks")
 CROPPED_IMGS_DIR = os.path.join(DATA_DIR, "cropped_imgs")
 DATASET_UNET_DIR = os.path.join(PROJECT_ROOT, "dataset_unet")
+
+# U-Net Dataset directories
+TRAIN_DIR = os.path.join(DATASET_UNET_DIR, "train")
+TEST_DIR = os.path.join(DATASET_UNET_DIR, "test")
+VAL_DIR = os.path.join(DATASET_UNET_DIR, "validation")
+
+MODELS_DIR = os.path.join(PROJECT_ROOT, "models")

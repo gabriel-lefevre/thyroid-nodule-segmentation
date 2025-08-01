@@ -4,6 +4,7 @@ from scripts.get_dataset import download_dataset
 from scripts.enhance_dataset import enhance_images
 from scripts.split_dataset import split_dataset
 from pipeline.unet_data_generating import UNetDatasetGenerator
+from training.ModelUNetGenerator import ModelUNetGenerator
 
 
 def _setup_workspace():
@@ -37,10 +38,18 @@ def main():
     success = split_dataset()
 
     if success:
-        log("✅ U-Net Dataset generated successfully!")
+        log("U-Net Dataset generated successfully!")
     else:
-        log("❌ U-net Dataset generation failed!")
+        log("U-net Dataset generation failed!")
         exit(1)
+
+    resnet50_model = ModelUNetGenerator(model_name="resnet50")
+    resnet50_model.train_model()
+    resnet50_model.evaluate_model()
+
+    vgg16_model = ModelUNetGenerator(model_name="vgg16")
+    vgg16_model.train_model()
+    vgg16_model.evaluate_model()
 
 
 if __name__ == "__main__":
