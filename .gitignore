@@ -209,3 +209,5 @@ __marimo__/
 .idea
 /data/
 /dataset_unet/
+/models
+.models

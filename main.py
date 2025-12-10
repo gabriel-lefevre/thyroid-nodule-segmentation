@@ -15,6 +15,7 @@ def _setup_workspace():
         ANNOTATED_IMGS_DIR,
         MASKS_DIR,
         CROPPED_IMGS_DIR,
+        MODELS_DIR
     ]
     for directory in directories:
         os.makedirs(directory, exist_ok=True)
